@@ -88,7 +88,7 @@
 				<key>FixRegions</key>
 				<true/>
 				<key>FixS3D</key>
-				<true/>
+				<false/>
 				<key>FixSATA</key>
 				<false/>
 				<key>FixSBUS</key>
@@ -100,7 +100,7 @@
 				<key>FixUSB</key>
 				<false/>
 				<key>FixWAK</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
@@ -230,7 +230,7 @@
 		<key>USB</key>
 		<dict>
 			<key>FixOwnership</key>
-			<false/>
+			<true/>
 			<key>Inject</key>
 			<false/>
 		</dict>

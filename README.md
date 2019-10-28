@@ -25,6 +25,8 @@
 | -------------------- | ---
 | ApfsDriverLoader.efi | Apple File System support
 | AptioMemoryFix.efi   | Allows macOS to boot with UEFI
+| VBoxHfs.efi          | Allows to boot from USB sticks
+| SMCHelper.efi        | 
 
 * When booting from a USB drive (e.g. for an installer), VBoxHfs.efi is required.
 
@@ -32,10 +34,15 @@
 
 | Kext               | Purpose
 | ------------------ | ---
-| FakeSMC.kext       | SMC emulator
-| Lilu.kext          | Kext/process patching
-| WhateverGreen.kext | Patches for GPUs
+| [AppleALC.kext](https://github.com/acidanthera/AppleALC)               | Native macOS HD audio for not officially supported codecs
+| [FakeSMC.kext](https://github.com/RehabMan/OS-X-FakeSMC-kozlek)        | SMC emulator
+| [Lilu.kext](https://github.com/acidanthera/Lilu)                       | Arbitrary kext and process patching on macOS
+| [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen)     | Various patches necessary for certain ATI/AMD/Intel/Nvidia GPUs
+| [FakePCIID.kext](https://github.com/RehabMan/OS-X-Fake-PCI-ID)         | Allow returning Fake PCI ID from IOPCIDevice
+| [IntelMausiEthernet.kext](https://github.com/Mieze/IntelMausiEthernet) | macOS driver for Intel onboard LAN
+| [USBInjectAll.kext](https://github.com/RehabMan/OS-X-USB-Inject-All) | Kext to inject all USB ports for the installed Intel EHCI/XHCI chipset automatically.
+| ------------------ | ---
+| [BrcmPatchRAM2.kext](https://github.com/RehabMan/OS-X-BrcmPatchRAM) | Broadcom PatchRAM driver for macOS
+| BrcmFirmwareData.kext | Part of BrcmPatchRAM2.kext
 
-* Audio: I use [USB speakers/headset](https://steelseries.com/gaming-headsets/arctis-5). I don't use the motherboard or front panel 3.5mm audio. If I did, I would need AppleALC.kext.
-* Ethernet: I use WiFi for internet access. If I needed ethernet, I you need IntelMausiEthernet.kext.
 * USB: All of my USB ports seem to work, my computer can sleep/wake/shutdown. If any of these were not the case, You would need USBInjectAll.kext and ACPI patches produced by usbmap.

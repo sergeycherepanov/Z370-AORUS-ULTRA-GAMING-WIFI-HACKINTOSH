@@ -1,5 +1,8 @@
 # Z370 AORUS ULTRA GAMING WIFI HACKINTOSH
-![About This Mac](about.png)
+
+|                 |            | 
+| --------------- | -------    |
+| ![About This Mac](about.png) | ![Wifi](wifi.png)
 ## Components
 
 | Component       | Price     | Manufacturer  | Model

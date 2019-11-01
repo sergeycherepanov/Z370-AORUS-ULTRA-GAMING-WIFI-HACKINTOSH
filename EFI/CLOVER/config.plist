@@ -187,7 +187,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1</string>
+		<string>kext-dev-mode=1 nv_disable=1 shikigva=32 shiki-id=Mac-7BA5B2D9E42DDD94</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -199,7 +199,7 @@
 		<key>Timeout</key>
 		<integer>3</integer>
 		<key>XMPDetection</key>
-		<integer>1</integer>
+		<string>Yes</string>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -212,11 +212,6 @@
 		<dict>
 			<key>Inject</key>
 			<integer>7</integer>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>WIFI</key>
-			<string>0x43a014E4</string>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -487,7 +482,7 @@
 				<key>Comment</key>
 				<string>USB Port Limit Patch 1 PMHeart/DalianSky</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				g/sPDw==
@@ -507,7 +502,7 @@
 				<key>Comment</key>
 				<string>USB Port Limit Patch 2 PMHeart/DalianSky</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				g+MP0w==
@@ -527,7 +522,7 @@
 				<key>Comment</key>
 				<string>USB Port Limit Patch 3 PMHeart/DalianSky</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				g/sPDw==
@@ -547,7 +542,7 @@
 				<key>Comment</key>
 				<string>USB Port Limit Patch 4 PMHeart/DalianSky</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				g/8PDw==
@@ -585,7 +580,7 @@
 				<key>Comment</key>
 				<string>10.11+-BCM94352-5GHz-US-FCC-darkvoid</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				QYP8/3QsSA==
@@ -603,7 +598,7 @@
 				<key>Comment</key>
 				<string>10.11+-BCM94352-Airport-Extreme-skvo</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				axAAAHUN

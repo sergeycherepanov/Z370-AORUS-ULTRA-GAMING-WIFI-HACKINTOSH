@@ -50,9 +50,9 @@
 				<key>AddMCHC</key>
 				<false/>
 				<key>AddPNLF</key>
-				<false/>
+				<true/>
 				<key>DeleteUnused</key>
-				<false/>
+				<true/>
 				<key>FakeLPC</key>
 				<false/>
 				<key>FixACST</key>
@@ -62,7 +62,7 @@
 				<key>FixAirport</key>
 				<true/>
 				<key>FixDarwin</key>
-				<false/>
+				<true/>
 				<key>FixDarwin7</key>
 				<false/>
 				<key>FixDisplay</key>
@@ -151,6 +151,10 @@
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
+			<key>SlpSmiAtWake</key>
+			<false/>
+			<key>SuspendOverride</key>
+			<false/>
 		</dict>
 		<key>DropTables</key>
 		<array>
@@ -182,12 +186,14 @@
 			</dict>
 			<key>NoOemTableId</key>
 			<false/>
+			<key>PluginType</key>
+			<string>1</string>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>brcmfx-country=#a kext-dev-mode=1 -v</string>
+		<string>brcmfx-country=#a kext-dev-mode=1 dart=0 -v</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -213,7 +219,7 @@
 			<key>Inject</key>
 			<integer>7</integer>
 			<key>ResetHDA</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>FakeID</key>
 		<dict>
@@ -266,12 +272,40 @@
 	</array>
 	<key>GUI</key>
 	<dict>
+		<key>Custom</key>
+		<dict>
+			<key>Entries</key>
+			<array>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Hidden</key>
+					<true/>
+					<key>Ignore</key>
+					<false/>
+					<key>NoCaches</key>
+					<false/>
+					<key>Title</key>
+					<string>New Custom Entry</string>
+					<key>Type</key>
+					<string>OSXRecovery</string>
+					<key>Volume</key>
+					<string>E91B0D81-240B-4757-A166-6D9DE96F5DC7</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+			</array>
+		</dict>
+		<key>CustomIcons</key>
+		<true/>
 		<key>EmbeddedThemeType</key>
 		<string>Light</string>
 		<key>Hide</key>
 		<array>
 			<string>Windows</string>
 			<string>BOOTX64.EFI</string>
+			<string>FileVault</string>
+			<string>Recovery</string>
 		</array>
 		<key>Language</key>
 		<string>en:0</string>
@@ -294,7 +328,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>Clovy</string>
+		<string>MaterialBox</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
